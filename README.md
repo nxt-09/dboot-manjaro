@@ -1,0 +1,1 @@
+# dboot-manjaro
