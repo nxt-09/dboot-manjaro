@@ -68,3 +68,16 @@ Boot USB with UEFI ➤ Connect Internet ➤ Launch Installer ➤ Manual partitio
 - Enter **`active`**
 - Enter **`format fs=fat32 quick`**
 - Enter **`exit`**
+
+## Remove OS1
+#### Create Recovery Drive
+- Search Create A Recovery Drive
+- Check Backup system files to the recovery drive
+- Choose USB drive and finish
+
+#### Delete Partitions
+- Run **`diskmgmt.msc`**
+- Format, Delete and Extend drives
+
+#### Fix Bootloader
+Boot to USB with UEFI ➤ Repair PC ➤ Troubleshoot ➤ Command Prompt ➤ Enter **`bootrec.exe /fixmbr`** ➤ Restart
